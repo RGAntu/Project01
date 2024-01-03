@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.layout{
+    margin-top: 150px;
+}
+header{
+    width: 70%;
+    background: red;
+    height: 70px;
+    margin: auto;
+}
+
+.content{
+    width: 70%;
+    margin: auto;
+}
+.content::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* If I don't write display: block then it will not showing  */
+
+.left-aside{
+    width: 15%;
+    background: green;
+    height: 300px;
+    float: left;
+    line-height: 300px;
+}
+.article{
+    width: 70%;
+    background: orange;
+    height: 300px;
+    float: left;
+    line-height: 300px;
+}
+.right-aside{
+    width: 15%;
+    background: blue;
+    color: aliceblue;
+    height: 300px;
+    float: left;
+    line-height: 300px;
+}
+
+/* line-height and height value are same that's why right-aside is vertically center */
+footer{
+    width: 70%;
+    height: 70px;
+    margin: auto;
+    background: red;
+}
+
+
+/* Note: If you want to vertically center using line height  h1,p then give line height the same value you give to the height */
